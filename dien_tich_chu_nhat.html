@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diện tích chữ nhật</title>
+</head>
+
+<body>
+    <table>
+        <h3>Tính diện tích hình chữ nhật</h3>
+        <tr>
+            <td>
+                <button >Chiều dài</button>
+            </td>
+            <td>
+                <input type="number" id="chieudai">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Chiều rộng</button>
+            </td>
+            <td>
+                <input type="number" id="chieurong">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button ype="button" onclick="tinhdientich()" >Diện tích hình chữ nhật là: </button>                              
+            </td>
+            <td id="dientich">
+               
+            </td>
+        </tr>        
+    </table>
+</body>
+<script>
+function tinhdientich(){
+    let chieudai = Number(document.getElementById("chieudai").value)
+    let chieurong = Number(document.getElementById("chieurong").value)
+    let dientichchunhat= chieudai * chieurong
+    document.getElementById("dientich").innerHTML = "Diện tích hình chữ nhật là: "+dientichchunhat
+}
+</script>
+</html>
